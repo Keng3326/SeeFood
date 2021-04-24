@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        app:cardPreventCornerOverlap="false"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/foodImg"
+                android:layout_width="150dp"
+                android:layout_height="110dp"/>
+
+            <TextView
+                android:id="@+id/foodId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/foodImg">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/recordResult"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/yuppy" />
+
+                    <TextView
+                        android:id="@+id/idenFoodName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="食物名稱"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/yuppy" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/recordDate"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/yuppy" />
+
+                    <TextView
+                        android:id="@+id/idenDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2019/8/8"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/yuppy" />
+                </TableRow>
+            </TableLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

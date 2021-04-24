@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/background_light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecognitionActivity">
+
+    <include
+        layout="@layout/toolbar_layout"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/recognitionTitle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/recognitionTitle"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textColor="@android:color/background_light"-->
+<!--        app:fontFamily="@font/yuppy"/>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_marginTop="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/noImageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/noImage"
+                android:gravity="center"
+                android:drawablePadding="10dp"
+                android:textColor="@android:color/background_dark"
+                android:drawableBottom="@mipmap/food"
+                android:textSize="20dp"
+                app:fontFamily="@font/yuppy"/>
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/noImageText"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/recognitionBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:text="@string/recognitionBtn"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:textColor="@android:color/background_light"
+                app:fontFamily="@font/yuppy"/>
+
+            <Button
+                android:id="@+id/renewBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recognitionBtn"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button2"
+                android:text="@string/renewBtn"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:textColor="@color/colorDark"
+                app:fontFamily="@font/yuppy"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        android:background="@color/colorWhite"/>
+
+</RelativeLayout>

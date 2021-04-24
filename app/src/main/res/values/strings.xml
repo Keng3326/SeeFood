@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">SeeFood</string>
+
+    <!--    navigation button   -->
+    <string name="nav_home">首頁</string>
+    <string name="nav_search">查詢</string>
+    <string name="nav_camera">相機</string>
+    <string name="nav_person">個人專區</string>
+    <string name="nav_setting">設定</string>
+
+    <!--    detail    -->
+    <string name="detailTitle">料理介紹</string>
+    <string name="foodDescTitle">介紹：</string>
+    <string name="materialTitle">食材：</string>
+    <string name="nutritionTitle">營養成分：</string>
+    <string name="calorieTitle">熱量：</string>
+    <string name="startCookBtn">開始製作</string>
+    <string name="speakCH">中</string>
+    <string name="speakTW">台</string>
+
+    <!--    favorite   -->
+    <string name="favoriteTitle">我的最愛</string>
+
+    <!--    home   -->
+    <string name="homeTitle">首頁</string>
+
+    <!--    initial   -->
+    <string name="cameraBtn">相機</string>
+    <string name="albumBtn">相簿</string>
+    <string name="homeBtn">首頁</string>
+
+    <!--    personal   -->
+    <string name="personalTitle">個人專區</string>
+    <string name="recordBtn">辨識紀錄</string>
+    <string name="favoriteBtn">我的最愛</string>
+
+    <!--    recipe   -->
+    <string name="recipe">食譜</string>
+    <string name="previousBtn">上一步</string>
+    <string name="nextBtn">下一步</string>
+    <string name="finishBtn">完成</string>
+
+    <!--    recognition   -->
+    <string name="recognitionTitle">辨識料理</string>
+    <string name="recognitionBtn">開始辨識</string>
+    <string name="renewBtn">重新辨識</string>
+    <string name="noImage">請選擇相片</string>
+    <string name="openCamera">開啟相機</string>
+    <string name="openAlbum">開啟相簿</string>
+
+    <!--    recognition result  -->
+    <string name="recognitionResultTitle">辨識結果</string>
+    <string name="result">辨識結果為:</string>
+    <string name="detailBtn">詳細資訊</string>
+
+    <!--    Record -->
+    <string name="recordTitle">辨識紀錄</string>
+    <string name="recordResult">辨識結果：</string>
+    <string name="recordDate">辨識日期：</string>
+
+    <!--    Search-->
+    <string name="searchTitle">搜尋料理</string>
+    <string name="foodNameText">料理名稱</string>
+    <string name="vegetarianText">葷/素</string>
+    <string name="non_vegetarianBtn">葷食</string>
+    <string name="vegetarianBtn">素食</string>
+    <string name="spicyText">辣/不辣</string>
+    <string name="spicyBtn">辣</string>
+    <string name="non_spicyBtn">不辣</string>
+    <string name="typeText">類型</string>
+    <string name="meetText">肉/海鮮類</string>
+    <string name="clearBtn">清除</string>
+    <string name="submitBtn">送出</string>
+    <string name="searchResult">查詢結果</string>
+
+    <!--    setting   -->
+    <string name="settingTitle">設定</string>
+    <string name="language">選擇語言</string>
+    <string name="reply">問題回報</string>
+    <string name="ok">送出</string>
+    <string name="cancel">取消</string>
+
+    <string-array name="typeSpinner">
+        <item>請選擇</item>
+        <item>小吃</item>
+        <item>配菜</item>
+        <item>主食</item>
+    </string-array>
+
+    <string-array name="meatSpinner">
+        <item>請選擇</item>
+        <item>豬肉</item>
+        <item>雞肉</item>
+        <item>牛肉</item>
+        <item>羊肉</item>
+        <item>海鮮</item>
+    </string-array>
+
+    <!--    message-->
+    <string name="noInfo">尚無資訊</string>
+    <string name="noSearchInfo">查無資訊</string>
+    <string name="addFavor">加入我的最愛</string>
+    <string name="alreadyFavor">已存在我的最愛中</string>
+    <string name="delete">刪除成功</string>
+    <string name="error">系統錯誤</string>
+    <string name="success">送出成功</string>
+
+</resources>

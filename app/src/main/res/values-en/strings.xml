@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SeeFood</string>
+
+    <!--    navigation button   -->
+    <string name="nav_home">home</string>
+    <string name="nav_search">search</string>
+    <string name="nav_camera">camera</string>
+    <string name="nav_person">personal</string>
+    <string name="nav_setting">setting</string>
+
+    <!--    detail    -->
+    <string name="detailTitle">Introduction</string>
+    <string name="foodDescTitle">Introduction：</string>
+    <string name="materialTitle">Ingredients：</string>
+    <string name="nutritionTitle">Nutrition：</string>
+    <string name="calorieTitle">Calorie：</string>
+    <string name="startCookBtn">Start Cooking</string>
+    <string name="speakCH">CH</string>
+    <string name="speakTW">TW</string>
+
+
+    <!--    favorite   -->
+    <string name="favoriteTitle">Favorite</string>
+
+    <!--    home   -->
+    <string name="homeTitle">Home</string>
+
+    <!--    initial   -->
+    <string name="cameraBtn">Camera</string>
+    <string name="albumBtn">Album</string>
+    <string name="homeBtn">Home</string>
+
+    <!--    personal   -->
+    <string name="personalTitle">Personal</string>
+    <string name="recordBtn">Recognition Record</string>
+    <string name="favoriteBtn">Favorite</string>
+
+    <!--    recipe   -->
+    <string name="recipe">Recipe</string>
+    <string name="previousBtn">Previous</string>
+    <string name="nextBtn">Next</string>
+    <string name="finishBtn">Finish</string>
+
+    <!--    recognition   -->
+    <string name="recognitionTitle">Recognition</string>
+    <string name="recognitionBtn">Start</string>
+    <string name="renewBtn">Renew</string>
+    <string name="noImage">Please select a photo</string>
+    <string name="openCamera">Open camera</string>
+    <string name="openAlbum">Open album</string>
+
+    <!--    recognition result  -->
+    <string name="recognitionResultTitle">Result</string>
+    <string name="result">This Is:</string>
+    <string name="detailBtn">Detail</string>
+
+    <!--    Record -->
+    <string name="recordTitle">Recognition Record</string>
+    <string name="recordResult">Result：</string>
+    <string name="recordDate">Date：</string>
+
+    <!--    Search-->
+    <string name="searchTitle">Search</string>
+    <string name="foodNameText">Food Name</string>
+    <string name="vegetarianText">Meat or Vegetarian</string>
+    <string name="non_vegetarianBtn">Meat</string>
+    <string name="vegetarianBtn">Vegetarian</string>
+    <string name="spicyText">Spicy or Not</string>
+    <string name="spicyBtn">Spicy</string>
+    <string name="non_spicyBtn">Not Spicy</string>
+    <string name="typeText">Type</string>
+    <string name="meetText">Meet</string>
+    <string name="clearBtn">Clear</string>
+    <string name="submitBtn">Send</string>
+    <string name="searchResult">Result</string>
+    <string-array name="typeSpinner">
+        <item>select</item>
+        <item>local dishes</item>
+        <item>side dish</item>
+        <item>staple food</item>
+    </string-array>
+
+    <string-array name="meatSpinner">
+        <item>select</item>
+        <item>pork</item>
+        <item>chicken</item>
+        <item>beef</item>
+        <item>lamb</item>
+        <item>seafood</item>
+    </string-array>
+
+    <!--    setting   -->
+    <string name="settingTitle">Setting</string>
+    <string name="language">Select Language</string>
+    <string name="reply">Report</string>
+    <string name="ok">send</string>
+    <string name="cancel">cancel</string>
+
+    <!--    message-->
+    <string name="noInfo">No information</string>
+    <string name="noSearchInfo">No information</string>
+    <string name="addFavor">add to favorites</string>
+    <string name="alreadyFavor">already in favorites</string>
+    <string name="delete">Deleted successfully</string>
+    <string name="error">Error</string>
+    <string name="success">Send successfully</string>
+
+</resources>

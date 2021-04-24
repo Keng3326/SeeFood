@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/background_light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <include
+        layout="@layout/toolbar_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_above="@+id/bottom_navigation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp">
+
+            <TableLayout
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/foodId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20dp"
+                        android:visibility="gone"
+                        app:fontFamily="@font/yuppy" />
+
+                    <TextView
+                        android:id="@+id/foodName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="宮保雞丁宮保雞丁宮保雞丁宮保雞丁"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/yuppy" />
+
+                    <TextView
+                        android:id="@+id/speakCH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/speakCH"
+                        android:drawableLeft="@drawable/volume"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/yuppy" />
+
+                    <TextView
+                        android:id="@+id/speakTW"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/speakTW"
+                        android:drawableLeft="@drawable/volume"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/yuppy" />
+
+                </TableRow>
+
+                <ImageView
+                    android:id="@+id/foodImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="fitCenter" />
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/foodDescTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t1"
+                android:layout_marginTop="15dp"
+                android:text="@string/foodDescTitle"
+                android:textSize="16dp"
+                android:textColor="@color/colorText"
+                app:fontFamily="@font/yuppy"/>
+
+            <TextView
+                android:id="@+id/foodDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/foodDescTitle"
+                android:layout_marginTop="5dp"
+                android:text="暫無資訊"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                app:fontFamily="@font/yuppy"/>
+
+            <TextView
+                android:id="@+id/materialTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/foodDesc"
+                android:layout_marginTop="15dp"
+                android:text="@string/materialTitle"
+                android:textSize="16dp"
+                android:textColor="@color/colorText"
+                app:fontFamily="@font/yuppy"/>
+
+            <TextView
+                android:id="@+id/material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/materialTitle"
+                android:layout_marginTop="5dp"
+                android:text="暫無資訊"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                app:fontFamily="@font/yuppy"/>
+
+            <TextView
+                android:id="@+id/nutritionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/material"
+                android:layout_marginTop="15dp"
+                android:text="@string/nutritionTitle"
+                android:textSize="16dp"
+                android:textColor="@color/colorText"
+                app:fontFamily="@font/yuppy"/>
+
+            <TextView
+                android:id="@+id/nutrition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nutritionTitle"
+                android:layout_marginTop="5dp"
+                android:text="暫無資訊"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                app:fontFamily="@font/yuppy"/>
+
+            <TextView
+                android:id="@+id/calorieTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nutrition"
+                android:layout_marginTop="15dp"
+                android:text="@string/calorieTitle"
+                android:textSize="16dp"
+                android:textColor="@color/colorText"
+                app:fontFamily="@font/yuppy"/>
+
+            <TextView
+                android:id="@+id/calorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calorieTitle"
+                android:layout_marginTop="5dp"
+                android:text="暫無資訊"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                app:fontFamily="@font/yuppy"/>
+
+            <Button
+                android:id="@+id/startCookBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calorie"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:text="@string/startCookBtn"
+                android:textSize="20dp"
+                android:textColor="@android:color/background_light"
+                app:fontFamily="@font/yuppy"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        android:background="@color/colorWhite"/>
+
+</RelativeLayout>

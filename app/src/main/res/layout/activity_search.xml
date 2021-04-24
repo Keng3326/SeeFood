@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SearchActivity">
+
+    <include
+        layout="@layout/toolbar_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_marginTop="60dp">
+
+<!--        <android.support.v7.widget.CardView-->
+<!--            android:id="@+id/cardView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/searchTitle"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:background="@color/colorWhite"-->
+<!--            app:cardCornerRadius="8dp"-->
+<!--            app:cardElevation="10dp"-->
+<!--            app:cardMaxElevation="15dp"-->
+<!--            app:cardPreventCornerOverlap="false">-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="30dp">
+
+                <TextView
+                    android:id="@+id/foodNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/foodNameText"
+                    android:textColor="@color/colorText"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/yuppy" />
+
+                <EditText
+                    android:id="@+id/foodNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/foodNameText"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/vegetarianText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/foodNameEditText"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/vegetarianText"
+                    android:textColor="@color/colorText"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/yuppy" />
+
+                <RadioGroup
+                    android:id="@+id/vegetarianGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vegetarianText"
+                    android:layout_marginTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/vegetarianBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vegetarianBtn"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/non_vegetarianBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/non_vegetarianBtn"
+                        android:textSize="16dp" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/spicyText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vegetarianGroup"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/spicyText"
+                    android:textColor="@color/colorText"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/yuppy" />
+
+                <RadioGroup
+                    android:id="@+id/spicyGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spicyText"
+                    android:layout_marginTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/spicyBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/spicyBtn"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/non_spicyBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/non_spicyBtn"
+                        android:textSize="16dp" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/typeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spicyGroup"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/typeText"
+                    android:textColor="@color/colorText"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/yuppy" />
+
+                <Spinner
+                    android:id="@+id/typeSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/typeText"
+                    android:layout_marginTop="5dp"></Spinner>
+
+                <TextView
+                    android:id="@+id/meetText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/typeSpinner"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/meetText"
+                    android:textColor="@color/colorText"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/yuppy" />
+
+                <Spinner
+                    android:id="@+id/meatSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/meetText"
+                    android:layout_marginTop="5dp"></Spinner>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/meatSpinner"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/clearBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button2"
+                            android:text="@string/clearBtn"
+                            android:textColor="@color/colorDark"
+                            android:textSize="16dp"
+                            app:fontFamily="@font/yuppy" />
+
+                        <Button
+                            android:id="@+id/submitBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button"
+                            android:text="@string/submitBtn"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="16dp"
+                            app:fontFamily="@font/yuppy" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+<!--        </android.support.v7.widget.CardView>-->
+
+    </ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        android:background="@color/colorWhite"/>
+
+</RelativeLayout>
